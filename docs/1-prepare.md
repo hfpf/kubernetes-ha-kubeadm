@@ -63,7 +63,7 @@ vm.panic_on_oom=0
 fs.inotify.max_user_watches=89100
 EOF
 # 生效文件
-$ sysctl -p /etc/sysctl.d/kubernetes.conf
+$ sysctl -p /etc/sysctl.d/kubernetes.conf #sysctl命令用于运行时配置内核参数，这些参数位于/proc/sys目录下
 ```
 ## 3. 安装docker（所有节点）
 根据kubernetes对docker版本的兼容测试情况，我们选择17.03.1版本
